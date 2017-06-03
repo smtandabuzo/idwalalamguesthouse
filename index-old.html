@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="booking/css/booking.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/camera.js"></script>
+<script src="booking/js/booking.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+      <script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+$(document).ready(function () {    
+    var allOptions = $('#selectprod option')
+    $('#selectcat').change(function () {
+        $('#selectprod option').remove()
+        var classN = $('#selectcat option:selected').prop('class');
+        var opts = allOptions.filter('.' + classN);
+        $.each(opts, function (i, j) {
+            $(j).appendTo('#selectprod');
+        });
+    });
+});
+</script>
+<script>
+    $(window).load(function() {
+        $(function() {
+                $('#foo2').carouFredSel({
+    				auto: false,
+    				responsive: true,
+    				width: '100%',
+    				scroll: 1,
+                    prev: '#prev2',
+    				next: '#next2',
+    				items: {
+    					height: 'auto',
+    					width:320,
+    					visible: {
+    						min: 1,
+    						max: 1
+    					}
+    				},
+    				mousewheel: true,
+    				swipe: {
+    					onMouse: true,
+    					onTouch: true
+    				}
+    			});
+    		});  	 				
+      });
+</script>
+<!--[if lt IE 9]>
+    <div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" z-index:"999" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
+  <![endif]-->
+  <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container"> 
+        <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo.png" alt="" class="logo_large"><img src="img/logo_medium.png" alt="" class="logo_medium"><span></span></a></h1>
+    </div>
+    <div class="follow-box">
+        <div class="container"> 
+            <ul class="address_icon">
+                <li><img src="img/page1_icon1.png" alt=""> 10139, Maqhinebeni Location, Viedgesville, 5099, Umtata, South Africa</li>
+                <li><img src="img/page1_icon2.png" alt=""> <a href="#">bookings@idwalalam.com</a></li>
+				<li><img src="img/page1_icon3.png" alt="">+27(0)835932248</li>
+				<li><img src="img/page1_icon3.png" alt="">+27(0)728555560</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div>
+</div>
+<div class="menuBox">  
+    <div class="container"> 
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+				<li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="bg_pic"></div>
+<div class="slider">
+    <div class="camera_wrap">
+        <div data-src="img/clean-linen.jpg"><div class="camera-caption fadeIn"><em></em><p class="title">At your service ...</span></p></div></div>
+        <div data-src="img/rondawel.jpg"><div class="camera-caption fadeIn"><em></em><p class="title">An experience you won&apos;t <br>forget <br><span>...</span></p></div></div>
+        <div data-src="img/home-feeling-one.jpg"><div class="camera-caption fadeIn"><em></em><p class="title">Feel right at home...</span></p></div></div>
+    </div>
+</div>
+<div class="global">
+    <div class="center-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <figure><img src="img/home-feeling-two.jpg" alt=""></figure>
+                    <p class="title">Comfortable</p>
+                    <p> <br>The best comfort in town</p>
+                    <!--<a href="#" class="btn-default btn1">more</a>-->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <figure><img src="img/shower.jpg" alt=""></figure>
+                    <p class="title">Modern</p>
+                    <p>Our rooms will give you an escape from the city while still maintaining a modern outlook.</p>
+                    <!--<a href="#" class="btn-default btn1">more</a>-->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <figure><img src="img/bedroom-interior.jpg" alt=""></figure>
+                    <p class="title">Affordable</p>
+                    <p>Enjoy the very best of luxury accomodation without breaking the bank.</p>
+                    <!--<a href="#" class="btn-default btn1">more</a>-->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <figure><img src="img/towels.jpg" alt=""></figure>
+                    <p class="title">Reliable</p>
+                    <p>We are open throughout the year and during peak season.</p>
+                    <!--<a href="#" class="btn-default btn1">more</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="welcome-box">
+        <div class="container">
+            <figure><img src="img/welcome_icon.png" alt=""></figure>
+            <p class="title">Welcome!</p>
+            <p class="description">luxurious guest house with conference facilities</p>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>-->
+			<p>Idwala Lam Guest House is situated alongside the N2 in Mthatha, Eastern Cape <br>21 kilometres from Mthatha city center. The Qunu home and museum of late statesmen and Nobel Peace Price winner Dr Nelson Mandela is a further 11 kilometres from the guest house. </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-6 gallery-box">
+                <p class="title">Our Gallery</p>
+                <div class="list_carousel2 responsive clearfix">
+                    <ul id="foo2">
+                        <li><img src="img/bathroom.jpg" alt=""></li>
+                        <li><img src="img/dining.jpg" alt=""></li>
+                        <li><img src="img/clean-bedding.jpg" alt=""></li>
+                        <li><img src="img/microwave.jpg" alt=""></li>
+						<li><img src="img/sofa-gallery-home.jpg" alt=""></li>
+						<li><img src="img/single-bedroom-gallery.jpg" alt=""></li>
+						<li><img src="img/dining-gallery-home.jpg" alt=""></li>
+						<li><img src="img/outside-view-gallery.jpg" alt=""></li>
+						<li><img src="img/double-bedroom-gallery.jpg" alt=""></li>
+						<li><img src="img/family-bedroom-gallery.jpg" alt=""></li>
+						<li><img src="img/rondawel-gallery.jpg" alt=""></li>
+						<li><img src="img/bathroom-one-gallery.jpg" alt=""></li>
+						<li><img src="img/deluxe-gallery.jpg" alt=""></li>
+						<li><img src="img/spa-gallery-home.jpg" alt=""></li>
+                    </ul>
+                    <div class="list_btn2">
+                        <a id="prev2" class="prev" href="#">prev</a> <span>|</span>
+                        <a id="next2" class="next" href="#">next</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 bookingForm">
+                <h2>Book a Room</h2>
+                <form id="bookingForm">
+                    <div class="fl1">
+                        <div class="tmInput">
+                            <input name="Name" placeHolder="Your Name" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+                        </div>
+                    </div>
+                    <div class="fl1">
+                        <div class="tmInput">
+                        <input name="Email" placeHolder="Email" type="text" data-constraints="@NotEmpty @Required @Email">
+                        </div>     
+                    </div>
+                    <div class="fl1">
+                        <div class="tmInput">
+                        <input name="Phone" placeHolder="Phone" type="text" data-constraints="@NotEmpty @Required @Phone">
+                        </div>     
+                    </div>
+                    <div class="clear"></div>
+                    <div class="controlHolder">
+                        <select name="#select1" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="" id="field_81" style="display: none;">
+                            <option>Room Type</option>
+                            <option value="1">Single Bedroom</option>
+                            <option class="2">Double Bedroom</option>
+                            <option class="3">Superior Queen Bedroom</option>
+							<option class="4">Family Bedroom</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="controlHolder">
+                        <select name="#select2" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="" id="field_414" style="display: none;">
+                            <option>Number</option>
+                            <option value="1">Number 1</option>
+							<option value="1">Number 1</option>
+                            <option value="2">Number 2</option>
+							<option value="3">Number 3</option>
+                            <option value="3">Number 4</option>
+							<option value="3">Number 5</option>
+							<option value="3">Number 6</option>
+							<option value="3">Number 7</option>
+							<option value="3">Number 8</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                    <label class="tmDatepicker ic-box">
+                        <input type="text" name="Check-in"  placeHolder='from' data-constraints="@NotEmpty @Required @Date">
+                    </label>
+                    <div class="clear"></div>
+                    <label class="tmDatepicker ic-box">
+                        <input type="text" name="Check-in"  placeHolder='to' data-constraints="@NotEmpty @Required @Date">
+                    </label>
+                    <div class="clear"></div>
+                    <div class="tmTextarea">
+                        <textarea name="Message" placeHolder="additional comments" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+                    </div>
+                    <a href="#" class="btn-default btn1" data-type="submit">Book Now!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="events-box">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box maxheight">
+                        <h3>Sign up for <br>our guestbook</h3>
+                        <p class="description">to receive special <br>promotions by e-mail</p>
+                    </div>
+                </div>-->
+                <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box maxheight">
+                        <h3>Guest House <br>Restaurant</h3>
+                        <p class="description">perfect menu from <br>our cook </p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box maxheight2">
+                        <p class="title">Idwala Lam</p>
+                        <p><span>copyright</span> &copy; <em id="copyright-year"></em> <a>Idwala Lam Guest House</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box maxheight2">
+                        <p class="title">E-Mail Us</p>
+                        <a href="#" class="lnk">bookings@idwalalam.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box maxheight2">
+                        <p class="title">Phone number</p>
+                        <a href="#" class="lnk">+27(0)835932248 / +27(0)728555560</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="box indent maxheight2">
+                        <p class="title">Address</p>
+                        <p class="txt">10139, Maqhinebeni Location, Viedgesville, 5099, Umtata, South Africa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!--More <a rel="nofollow" href="http://www.templatemonster.com/category/hotels-web-templates/" target="_blank">Hotels Website Templates at TemplateMonster.com</a>-->
+</footer>
+<div class="map-box">
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>-->
+	<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217195.2772432562!2d28.553970919848865!3d-31.72473878130246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5fd574f11c6791%3A0x712b83ae38b00e72!2sIdwala+Lam+Guest+House!5e0!3m2!1sen!2s!4v1478911502596" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13576.173707691703!2d28.68970693176874!3d-31.71470869728018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31db05bfafafccb6!2sIdwala+Lam+Guest+House!5e0!3m2!1sen!2sza!4v1480009670975" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script>
+  $(function (){
+        $('#bookingForm').bookingForm({
+            ownerEmail: 'bookings@idwalalam.com'
+        });
+    })
+    $(function() {
+     $('#bookingForm input, #bookingForm textarea').placeholder();
+    });
+</script>
+<script>
+jQuery("#field_81").change(function() {
+        if (jQuery(this).data('options') == undefined) {
+            /*Taking an array of all options-2 and kind of embedding it on the select1*/
+            jQuery(this).data('options', jQuery('#field_414 option').clone());
+        }
+        var id = jQuery(this).val();
+        var options = jQuery(this).data('options').filter('[value="' + id + '"]');
+        jQuery('#field_414').html(options);
+    });
+</script>
+</body>
+</html>
