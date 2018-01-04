@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/bootstrap.css" >
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
-
+<link rel="stylesheet" href="css/jquery-ui.css">
 
 <!--JS-->
 <script src="js/jquery.js"></script>
@@ -23,6 +23,17 @@
 <script src="js/jquery.mobilemenu.js"></script>
 <script src="js/jquery.equalheights.js"></script> 
 <script src="js/jquery.ui.totop.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+    $( function() {
+    $( "#fromdatepicker" ).datepicker();
+  } );
+</script>
+<script>
+    $( function() {
+    $( "#todatepicker" ).datepicker();
+  } );
+</script>
 <!--[if lt IE 9]>
     <div style='text-align:center' class="qwerty"><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
   <![endif]-->
@@ -74,7 +85,48 @@
     <div class="services-box">
         <div class="container">
             <h2>Bookings</h2>
+            <div class="col-md-6">
+            <p>From: <input type="text" id="fromdatepicker"></p>
+            </div>
+            <div class="col-md-3">
+            <p>To: <input type="text" id="todatepicker"></p>
+            </div>
             
+            </div>
+            <div class="container">
+            <h3>Room Types</h3>
+            <div class="col-md-6">
+             <h4>Single Bedroom</h4>
+             <div class="thumb-pad00">
+                 <div class="thumbnail">
+                     <figure><a href="img/single-bedroom.jpg"><em><span></span></em><img src="img/single-bedroom.jpg" alt="Mthatha Affordable Accommodation"></a></figure>
+                 </div>
+             </div>
+            </div>
+            <div class="col-md-6">
+             <h4>Double Bedroom</h4>
+             <div class="thumb-pad00">
+                 <div class="thumbnail">
+                     <figure><a href="img/rose.jpg"><em><span></span></em><img src="img/rose.jpg" alt="Double Bedroom"></a></figure>
+                 </div>
+             </div>
+            </div>
+            <div class="col-md-6">
+             <h4>Superior Queen Bedroom</h4>
+             <div class="thumb-pad00">
+                 <div class="thumbnail">
+                     <figure><a href="img/deluxe.jpg"><em><span></span></em><img src="img/deluxe.jpg" alt="Places to stay in Umtata"></a></figure>
+                 </div>
+             </div>
+            </div>
+            <div class="col-md-6">
+             <h4>Family Bedroom</h4>
+             <div class="thumb-pad00">
+                 <div class="thumbnail">
+                     <figure><a href="img/family-bedroom.jpg"><em><span></span></em><img src="img/family-bedroom.jpg" alt="Hotel accommodation in Umtata"></a></figure>
+                 </div>
+             </div>
+            </div>
             </div>
         </div>
         <div class="all-box">
