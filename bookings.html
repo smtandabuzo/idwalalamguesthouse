@@ -145,22 +145,27 @@
             <div class="container">
                 <div class="row">
                 <h3>Personal Details</h3>
-                <div class="col-md-6">
+                <div class="row">
+                <div class="col-md-8">
                 <label for="">Title</label>
                 <input type="text">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="">Arrival Time</label>
                     <input type="text">
                 </div>
-                <div class="col-md-6">
+                </div>
+                <div class="row">   
+                <div class="col-md-8">
                 <label for="" aria-required="">First Name</label>
                 <input type="text">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="" required>Surname</label>
                     <input type="text">
                 </div>
+                </div>
+                <div class="row">
                 <div class="col-md-6">
                     <label for="">Phone no</label>
                     <input type="text">
@@ -170,25 +175,53 @@
                     <input type="text">
                 </div>
                 </div>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
                 <h3>Payment Details</h3>
-                <div class="col-md-6">
-                    <label for="">Payment Options</label>
-                    <input type="text">
-                </div>
+                <label for="">Payment Options</label>
+                    <select name="" id="">
+                        <option value="">Payment Options</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Electronic">Electronic Funds Transfer</option>
+                    </select>
+                    <section id="Credit Card" class="section">
                 <label for="">Credit Card Type</label>
-                <input type="text">
+                <select name="" id="">
+                    <option value="">Credit Card Type</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+                <div class="row">
+                    <div class="col-md-6">
                 <label for="">Card Number</label>
                 <input type="text">
+                </div>
+                <div class="col-md-6">
                 <label for="">Name on Card</label>
                 <input type="text">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
                 <label for="">Expiry Date</label>
+                </div>
+                <div class="col-md-4">
                 <input type="text" placeholder="MM">
+                </div>
+                <div class="col-md-4">
                 <input type="text" placeholder="YYYY">
-                <label for="">CVC</label>
-                <input type="text">
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="">CVC</label>
+                        <input type="text"> 
+                    </div>
+                </div>
+                </section>
                 </div>
             </div>
         </div>
